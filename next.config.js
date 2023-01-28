@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+/** @type {import('./next-i18next.config').NextConfig} */
+
 const nextConfig = {
   eslint: {
     dirs: ['src'],
@@ -6,6 +8,11 @@ const nextConfig = {
 
   reactStrictMode: true,
   swcMinify: true,
+
+  i18n: {
+    locales: ['en', 'th'],
+    defaultLocale: 'en',
+  },
 
   // Uncoment to add domain whitelist
   // images: {
